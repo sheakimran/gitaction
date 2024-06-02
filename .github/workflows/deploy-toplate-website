@@ -26,7 +26,7 @@ jobs:
           bundle install
           jekyll build
           # Replace with your deployment commands
-        #  rsync -avz _site/ your-deployment-server:/path/to/website
+          rsync -avz _site/ gh-pages:/root/2096_individual
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
